@@ -10,7 +10,7 @@ import Link from '@mui/material/Link';
 const styles = makeStyles({
     home: {
         display: 'block',
-        padding: '40px',
+        padding: '25px',
         color: 'lightgray',
         ['@media (min-width:1025px)']: {
             // width: '100%',
@@ -36,11 +36,10 @@ const styles = makeStyles({
         alignContent: 'center',
     },
     image: {
-        borderRadius: '70%',
+        borderRadius: '50%',
         border: '1px solid lightgray',
-        width: '11%',
-        height: '20%',
-        margin: '20px',
+        width: '15%',
+        margin: '10px',
     },
     connect: {
         paddingBottom: '8px',
@@ -48,7 +47,7 @@ const styles = makeStyles({
     social: {
         display: 'flex',
         justifyContent: 'center',
-        paddingBottom: '15px',
+        paddingBottom: '10px',
     },
     homePages: {
         display: 'flex',

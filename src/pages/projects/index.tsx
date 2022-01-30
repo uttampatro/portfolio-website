@@ -56,8 +56,8 @@ const styles = makeStyles({
     homePages: {
         display: 'flex',
         justifyContent: 'space-evenly',
-        paddingTop: '10px',
-        margin: '20px',
+        paddingTop: '22px',
+        // margin: '10px',
     },
     pages: {
         cursor: 'pointer',
