@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import BackgroundImage from './components/Images/bgI.png';
+import Home from './pages/home';
+import Projects from './pages/projects';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    return (
+        <div
+            style={{ backgroundImage: `url(${BackgroundImage})` }}
+            className="App"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+            <Home />
+            {/* <Projects /> */}
+        </div>
+    );
 }
 
 export default App;
