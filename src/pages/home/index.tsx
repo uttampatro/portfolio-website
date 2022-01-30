@@ -2,6 +2,7 @@ import React from 'react';
 import linkedInLogo from '../../components/Images/linkedIN.png';
 import githubLogo from '../../components/Images/github.png';
 import twitterLogo from '../../components/Images/twitter.svg';
+import myPic from '../../components/Images/myPic.jpg';
 import { makeStyles } from '@mui/styles';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
@@ -37,10 +38,9 @@ const styles = makeStyles({
     image: {
         borderRadius: '70%',
         border: '1px solid lightgray',
-        width: '15%',
-        // height: '20%',
+        width: '11%',
+        height: '20%',
         margin: '20px',
-        filter: 'grayscale(100%)',
     },
     connect: {
         paddingBottom: '8px',
@@ -93,11 +93,7 @@ function Home() {
             </div>
 
             <div>
-                <img
-                    className={classes.image}
-                    src="https://d5nunyagcicgy.cloudfront.net/external_assets/hero_examples/hair_beach_v391182663/original.jpeg"
-                    alt=""
-                />
+                <img className={classes.image} src={myPic} alt="" />
             </div>
 
             <div className={classes.connect}>
@@ -138,7 +134,7 @@ function Home() {
                 <div className="socialLogo">
                     <Link href="https://github.com/uttampatro" target="_blank">
                         <img
-                            style={{ width: '20px', height: '20px' }}
+                            style={{ width: '18px', height: '20px' }}
                             src={githubLogo}
                         />
                     </Link>

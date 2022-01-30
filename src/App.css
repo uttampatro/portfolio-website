@@ -1,28 +1,28 @@
 .App {
     text-align: center;
-    background-position: center center;
+    /* background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(./components/Images/bg.png);
+    background-size: cover; */
+    background-image: url(./components/Images/bgI.png);
 }
 
 @media (max-width: 480px) {
     .App {
-        background-image: url(./components/Images/bg.png);
+        background-image: url(./components/Images/bgI.png);
         width: 100%;
     }
 }
 
 @media (min-width: 1025px) {
     .App {
-        background-image: url(./components/Images/bg.png);
+        background-image: url(./components/Images/bgI.png);
         width: 100%;
     }
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
     .App {
-        background-image: url(./components/Images/bg.png);
+        background-image: url(./components/Images/bgI.png);
     }
 }
