@@ -9,10 +9,16 @@ import Link from '@mui/material/Link';
 const styles = makeStyles({
     home: {
         display: 'block',
-        // border: '1px solid lightgray',
-        // margin: '10px',
         padding: '40px',
         color: 'lightgray',
+        ['@media (min-width:1025px)']: {
+            // width: '100%',
+            // height: '100%',
+        },
+        ['@media (min-width: 780px) and (max-width: 1024px)']: {
+            // width: '100%',
+            // height: '100%',
+        },
     },
     homeDescription: {
         display: 'flex',

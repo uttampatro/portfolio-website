@@ -13,16 +13,17 @@ const styles = makeStyles({
         color: 'white',
     },
     body: {
-        display: 'flex',
+        // display: 'flex',
         color: 'lightgray',
-        paddingBottom: '20px',
+        padding: '20px',
     },
     bodyContainer: {
         maxWidth: 500,
+        marginBottom: '20px',
         margin: 'auto',
         padding: '15px',
         border: '2px solid lightgray',
-        paddingTop: '0.5rem',
+        paddingBottom: '0.5rem',
     },
     link: {
         display: 'flex',
@@ -147,8 +148,6 @@ function Projects() {
                         </Link>
                     </div>
                 </div>
-            </div>
-            <div className={classes.body}>
                 <div className={classes.bodyContainer}>
                     <Typography variant="h3">CRUD Operation</Typography>
                     <Typography variant="caption">Oct, 2021</Typography>
@@ -223,8 +222,6 @@ function Projects() {
                         </Link>
                     </div>
                 </div>
-            </div>
-            <div className={classes.body}>
                 <div className={classes.bodyContainer}>
                     <Typography variant="h3">Twitter Clone</Typography>
                     <Typography variant="caption">Jul, 2021</Typography>
