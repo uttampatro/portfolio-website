@@ -57,7 +57,7 @@ const styles = makeStyles({
         display: 'flex',
         justifyContent: 'space-evenly',
         paddingTop: '22px',
-        // margin: '10px',
+        marginBottom: '12px',
     },
     pages: {
         cursor: 'pointer',
