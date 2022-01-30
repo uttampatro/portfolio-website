@@ -1,15 +1,21 @@
 import React from 'react';
 import './App.css';
-import BackgroundImage from './components/Images/bg.png';
+import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
 import Home from './pages/home';
 import Projects from './pages/projects';
 
 function App() {
     return (
-        <div className="App">
-            {/* <Home /> */}
-            <Projects />
-        </div>
+        <BrowserRouter>
+            <div className="App">
+                <div className="app_body">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/projects" element={<Projects />} />
+                    </Routes>
+                </div>
+            </div>
+        </BrowserRouter>
     );
 }
 

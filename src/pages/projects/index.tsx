@@ -13,7 +13,6 @@ const styles = makeStyles({
         color: 'white',
     },
     body: {
-        // display: 'flex',
         color: 'lightgray',
         padding: '20px',
     },
@@ -48,7 +47,6 @@ const styles = makeStyles({
         color: 'white',
         padding: '0.5rem 1rem',
         marginRight: '0.5rem',
-        // backgroundColor: 'glightgrayray',
         border: '1px solid lightgray',
         borderRadius: '1rem 2rem',
         '&:hover': {
@@ -60,6 +58,9 @@ const styles = makeStyles({
         justifyContent: 'space-evenly',
         paddingTop: '10px',
         margin: '20px',
+    },
+    pages: {
+        cursor: 'pointer',
     },
 });
 
@@ -84,8 +85,8 @@ function Projects() {
                     <Typography variant="h3">Udemy Clone</Typography>
                     <Typography variant="caption">Present</Typography>
                     <Typography>
-                        This is a clone of udemy website. For seeing live use
-                        this credential{' '}
+                        This is a clone of udemy website. For live use this
+                        credential{' '}
                         <strong>
                             email: uttam@gmail.com, password: 12345678
                         </strong>
@@ -226,8 +227,8 @@ function Projects() {
                     <Typography variant="h3">Twitter Clone</Typography>
                     <Typography variant="caption">Jul, 2021</Typography>
                     <Typography>
-                        This is a clone of Twitter website. For seeing live use
-                        this credential{' '}
+                        This is a clone of Twitter website. For live use this
+                        credential{' '}
                         <strong>
                             email: uttam@gmail.com, password: 12345678
                         </strong>
@@ -265,13 +266,28 @@ function Projects() {
             </div>
             <hr />
             <div className={classes.homePages}>
-                <Link color="white" href="#" underline="hover">
+                <Link
+                    className={classes.pages}
+                    color="white"
+                    href="/"
+                    underline="hover"
+                >
                     HOME
                 </Link>
-                <Link color="white" href="#" underline="hover">
+                <Link
+                    className={classes.pages}
+                    color="white"
+                    href="/projects"
+                    underline="hover"
+                >
                     PROJECTS
                 </Link>
-                <Link onClick={sendEmail} color="white" underline="hover">
+                <Link
+                    className={classes.pages}
+                    onClick={sendEmail}
+                    color="white"
+                    underline="hover"
+                >
                     CONTACT
                 </Link>
             </div>

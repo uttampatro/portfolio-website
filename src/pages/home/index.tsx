@@ -48,12 +48,15 @@ const styles = makeStyles({
     social: {
         display: 'flex',
         justifyContent: 'center',
-        paddingBottom: '10px',
+        paddingBottom: '15px',
     },
     homePages: {
         display: 'flex',
         justifyContent: 'space-evenly',
         paddingTop: '25px',
+    },
+    pages: {
+        cursor: 'pointer',
     },
 });
 
@@ -143,13 +146,28 @@ function Home() {
             </div>
             <hr />
             <div className={classes.homePages}>
-                <Link color="white" href="#" underline="hover">
+                <Link
+                    className={classes.pages}
+                    color="white"
+                    href="/"
+                    underline="hover"
+                >
                     HOME
                 </Link>
-                <Link color="white" href="#" underline="hover">
+                <Link
+                    className={classes.pages}
+                    color="white"
+                    href="/projects"
+                    underline="hover"
+                >
                     PROJECTS
                 </Link>
-                <Link onClick={sendEmail} color="white" underline="hover">
+                <Link
+                    className={classes.pages}
+                    onClick={sendEmail}
+                    color="white"
+                    underline="hover"
+                >
                     CONTACT
                 </Link>
             </div>
