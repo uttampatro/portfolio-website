@@ -117,8 +117,9 @@ function Home() {
                     >
                         <img
                             style={{
-                                width: '18px',
-                                height: '18px',
+                                paddingTop:'1px',
+                                width: '17px',
+                                height: '17px',
                                 borderRadius: '2px',
                             }}
                             src={linkedInLogo}
@@ -143,7 +144,7 @@ function Home() {
                 <div className="socialLogo">
                     <Link href="https://github.com/uttampatro" target="_blank">
                         <img
-                            style={{ width: '18px', height: '20px' }}
+                            style={{ width: '18px', height: '18px' }}
                             src={githubLogo}
                         />
                     </Link>
