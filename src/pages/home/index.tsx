@@ -2,45 +2,48 @@ import React from 'react';
 import linkedInLogo from '../../components/Images/linkedIN.png';
 import githubLogo from '../../components/Images/github.png';
 import twitterLogo from '../../components/Images/twitter.svg';
-import myPic from '../../components/Images/myPic.jpg';
+import BG from '../../components/Images/bImage.jpeg';
 import { makeStyles } from '@mui/styles';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 
 const styles = makeStyles({
     home: {
-        display: 'block',
         padding: '30px',
-        color: 'lightgray',
-        ['@media (min-width:1025px)']: {
-            // width: '100%',
-            // height: '100%',
-        },
-        ['@media (min-width: 780px) and (max-width: 1024px)']: {
-            // width: '100%',
-            // height: '100%',
-        },
+        color: 'gray',
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0,
+        overflow: 'auto',
+        backgroundImage: `url(${BG})`,
+        backgroundPosition: 'center center',
+        backgroundAttachment: 'fixed',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+    },
+    homePages: {
+        display: 'flex',
+        fontWeight: 'bold',
+        justifyContent: 'space-evenly',
+        paddingBottom: '25px',
+    },
+    pages: {
+        cursor: 'pointer',
     },
     homeDescription: {
-        display: 'flex',
-        justifyContent: 'center',
+        padding: '200px 0',
+    },
+    h3: {
+        maxWidth: 500,
+        alignContent: 'center',
+        color: 'black',
     },
     body1: {
         padding: '30px',
         maxWidth: 400,
         alignContent: 'center',
-    },
-    body2: {
-        padding: '10px',
-        maxWidth: 400,
-        alignContent: 'center',
-    },
-    image: {
-        borderRadius: '50%',
-        border: '1px solid lightgray',
-        width: '13%',
-        margin: '10px',
-        marginTop: '20px',
     },
     connect: {
         paddingBottom: '8px',
@@ -49,14 +52,6 @@ const styles = makeStyles({
         display: 'flex',
         justifyContent: 'center',
         paddingBottom: '15px',
-    },
-    homePages: {
-        display: 'flex',
-        justifyContent: 'space-evenly',
-        paddingTop: '25px',
-    },
-    pages: {
-        cursor: 'pointer',
     },
 });
 
@@ -70,30 +65,44 @@ function Home() {
 
     return (
         <div className={classes.home}>
-            <Typography variant="h3">Hello, I'm Uttam Patro</Typography>
+            <div className={classes.homePages}>
+                <Link
+                    className={classes.pages}
+                    color="gray"
+                    href="/"
+                    underline="hover"
+                >
+                    HOME
+                </Link>
+                <Link
+                    className={classes.pages}
+                    color="gray"
+                    href="/projects"
+                    underline="hover"
+                >
+                    PROJECTS
+                </Link>
+                <Link
+                    className={classes.pages}
+                    onClick={sendEmail}
+                    color="gray"
+                    underline="hover"
+                >
+                    CONTACT
+                </Link>
+            </div>
+            <hr />
 
             <div className={classes.homeDescription}>
+                <Typography className={classes.h3} variant="h3">
+                    Hello, I'm Uttam Patro
+                </Typography>
+
                 <Typography className={classes.body1} variant="body1">
-                    I have been actively self-teaching programming since last
-                    six months and I have learned and played around with big
-                    projects on GitHub and taught myself to build a full stack
-                    application on ReactJs, NodeJS (Typescript) and have worked
-                    with MongoDB and PostgreSQL for data store. And built
-                    multiple projects on this tech stack & I am very much
-                    resilient to learn and adapt new technologies.
+                    I am a full stack developer, primarily works on javascript
+                    tech stack - node.js, react.js and have been actively
+                    shipping multiple projects in Node/React/MongoDB stack.
                 </Typography>
-            </div>
-
-            <div className={classes.homeDescription}>
-                <Typography className={classes.body2} variant="body2">
-                    I primarily use node.js for backend who's always eager to
-                    work with new tech stacks so when it comes to picking up a
-                    new framework or language.
-                </Typography>
-            </div>
-
-            <div>
-                <img className={classes.image} src={myPic} alt="" />
             </div>
 
             <div className={classes.connect}>
@@ -139,33 +148,6 @@ function Home() {
                         />
                     </Link>
                 </div>
-            </div>
-            <hr />
-            <div className={classes.homePages}>
-                <Link
-                    className={classes.pages}
-                    color="white"
-                    href="/"
-                    underline="hover"
-                >
-                    HOME
-                </Link>
-                <Link
-                    className={classes.pages}
-                    color="white"
-                    href="/projects"
-                    underline="hover"
-                >
-                    PROJECTS
-                </Link>
-                <Link
-                    className={classes.pages}
-                    onClick={sendEmail}
-                    color="white"
-                    underline="hover"
-                >
-                    CONTACT
-                </Link>
             </div>
         </div>
     );

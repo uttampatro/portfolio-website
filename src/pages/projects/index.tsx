@@ -1,24 +1,39 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
 import Typography from '@mui/material/Typography';
+import BG from '../../components/Images/bImage.jpeg';
 import Link from '@mui/material/Link';
 
 const styles = makeStyles({
     projects: {
         display: 'block',
-        padding: '20px',
+        padding: '30px',
+        overflow: 'auto',
+        backgroundImage: `url(${BG})`,
+        backgroundPosition: 'center center',
+        backgroundAttachment: 'fixed',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
     },
     headerContainer: {
         paddingBottom: '20px',
-        color: 'white',
     },
     body: {
-        color: 'lightgray',
-        padding: '20px',
+        color: 'gray',
+    },
+    homePages: {
+        display: 'flex',
+        fontWeight: 'bold',
+        justifyContent: 'space-evenly',
+        marginBottom: '25px',
+    },
+    pages: {
+        cursor: 'pointer',
     },
     bodyContainer: {
         maxWidth: 500,
         marginBottom: '20px',
+        color: 'gray',
         margin: 'auto',
         padding: '15px',
         border: '2px solid lightgray',
@@ -26,25 +41,24 @@ const styles = makeStyles({
     },
     link: {
         display: 'flex',
+        color: 'gray',
         justifyContent: 'space-around',
         padding: '20px',
         paddingTop: '25px',
     },
     linkPrimary: {
         textDecoration: 'none',
-        color: 'white',
         padding: '0.5rem 1rem',
         marginRight: '0.5rem',
-        backgroundColor: 'lightgray',
+        backgroundColor: 'gray',
         border: '1px solid lightgray',
         borderRadius: '1rem 2rem',
         '&:hover': {
-            backgroundColor: 'gray',
+            backgroundColor: 'white',
         },
     },
     linkSecondary: {
         textDecoration: 'none',
-        color: 'white',
         padding: '0.5rem 1rem',
         marginRight: '0.5rem',
         border: '1px solid lightgray',
@@ -52,15 +66,6 @@ const styles = makeStyles({
         '&:hover': {
             backgroundColor: 'gray',
         },
-    },
-    homePages: {
-        display: 'flex',
-        justifyContent: 'space-evenly',
-        paddingTop: '22px',
-        marginBottom: '12px',
-    },
-    pages: {
-        cursor: 'pointer',
     },
 });
 
@@ -74,15 +79,48 @@ function Projects() {
 
     return (
         <div className={classes.projects}>
+            <div className={classes.homePages}>
+                <Link
+                    className={classes.pages}
+                    color="gray"
+                    href="/"
+                    underline="hover"
+                >
+                    HOME
+                </Link>
+                <Link
+                    className={classes.pages}
+                    color="gray"
+                    href="/projects"
+                    underline="hover"
+                >
+                    PROJECTS
+                </Link>
+                <Link
+                    className={classes.pages}
+                    onClick={sendEmail}
+                    color="gray"
+                    underline="hover"
+                >
+                    CONTACT
+                </Link>
+            </div>
+            <hr />
             <div className={classes.headerContainer}>
-                <Typography variant="h4" className="headerContainer-heading">
+                <Typography
+                    style={{ paddingTop: '30px' }}
+                    variant="h4"
+                    className="headerContainer-heading"
+                >
                     Explore my <span style={{ color: 'gray' }}>Projects</span>{' '}
                     and try them out!
                 </Typography>
             </div>
             <div className={classes.body}>
                 <div className={classes.bodyContainer}>
-                    <Typography variant="h3">Udemy Clone</Typography>
+                    <Typography style={{ color: 'black' }} variant="h3">
+                        Udemy Clone
+                    </Typography>
                     <Typography variant="caption">Present</Typography>
                     <Typography>
                         This is a clone of udemy website. For live use this
@@ -104,7 +142,7 @@ function Projects() {
                         <Link
                             className={classes.linkSecondary}
                             underline="none"
-                            color="white"
+                            color="black"
                             href="https://github.com/uttampatro/udemy-client"
                             target="_blank"
                         >
@@ -113,7 +151,7 @@ function Projects() {
                         <Link
                             className={classes.linkSecondary}
                             underline="none"
-                            color="white"
+                            color="black"
                             href="https://github.com/uttampatro/udemy-server"
                             target="_blank"
                         >
@@ -122,7 +160,9 @@ function Projects() {
                     </div>
                 </div>
                 <div className={classes.bodyContainer}>
-                    <Typography variant="h3">Quiz about Sports</Typography>
+                    <Typography style={{ color: 'black' }} variant="h3">
+                        Quiz about Sports
+                    </Typography>
                     <Typography variant="caption">Dec, 2021</Typography>
                     <Typography>
                         This is a CLI Based quiz app build with{' '}
@@ -141,7 +181,7 @@ function Projects() {
                         <Link
                             className={classes.linkSecondary}
                             underline="none"
-                            color="white"
+                            color="black"
                             href="https://github.com/uttampatro/quiz-game"
                             target="_blank"
                         >
@@ -150,7 +190,9 @@ function Projects() {
                     </div>
                 </div>
                 <div className={classes.bodyContainer}>
-                    <Typography variant="h3">CRUD Operation</Typography>
+                    <Typography style={{ color: 'black' }} variant="h3">
+                        CRUD Operation
+                    </Typography>
                     <Typography variant="caption">Oct, 2021</Typography>
                     <Typography>
                         This project is based on <strong>CRUD</strong> operation
@@ -169,7 +211,7 @@ function Projects() {
                         <Link
                             className={classes.linkSecondary}
                             underline="none"
-                            color="white"
+                            color="black"
                             href="https://github.com/uttampatro/assignment-02"
                             target="_blank"
                         >
@@ -178,7 +220,7 @@ function Projects() {
                         <Link
                             className={classes.linkSecondary}
                             underline="none"
-                            color="white"
+                            color="black"
                             href="https://github.com/uttampatro/assignment-02-service"
                             target="_blank"
                         >
@@ -187,7 +229,9 @@ function Projects() {
                     </div>
                 </div>
                 <div className={classes.bodyContainer}>
-                    <Typography variant="h3">Movie Uploader</Typography>
+                    <Typography style={{ color: 'black' }} variant="h3">
+                        Movie Uploader
+                    </Typography>
                     <Typography variant="caption">Sep, 2021</Typography>
                     <Typography>
                         In this project we can add movie and we can also watch
@@ -206,7 +250,7 @@ function Projects() {
                         <Link
                             className={classes.linkSecondary}
                             underline="none"
-                            color="white"
+                            color="black"
                             href="https://github.com/uttampatro/assignment-01"
                             target="_blank"
                         >
@@ -215,7 +259,7 @@ function Projects() {
                         <Link
                             className={classes.linkSecondary}
                             underline="none"
-                            color="white"
+                            color="black"
                             href="https://github.com/uttampatro/assignment-01-service"
                             target="_blank"
                         >
@@ -224,7 +268,9 @@ function Projects() {
                     </div>
                 </div>
                 <div className={classes.bodyContainer}>
-                    <Typography variant="h3">Twitter Clone</Typography>
+                    <Typography style={{ color: 'black' }} variant="h3">
+                        Twitter Clone
+                    </Typography>
                     <Typography variant="caption">Jul, 2021</Typography>
                     <Typography>
                         This is a clone of Twitter website. For live use this
@@ -246,7 +292,7 @@ function Projects() {
                         <Link
                             className={classes.linkSecondary}
                             underline="none"
-                            color="white"
+                            color="black"
                             href="https://github.com/uttampatro/twitter-client"
                             target="_blank"
                         >
@@ -255,7 +301,7 @@ function Projects() {
                         <Link
                             className={classes.linkSecondary}
                             underline="none"
-                            color="white"
+                            color="black"
                             href="https://github.com/uttampatro/twitter-server"
                             target="_blank"
                         >
@@ -263,33 +309,6 @@ function Projects() {
                         </Link>
                     </div>
                 </div>
-            </div>
-            <hr />
-            <div className={classes.homePages}>
-                <Link
-                    className={classes.pages}
-                    color="white"
-                    href="/"
-                    underline="hover"
-                >
-                    HOME
-                </Link>
-                <Link
-                    className={classes.pages}
-                    color="white"
-                    href="/projects"
-                    underline="hover"
-                >
-                    PROJECTS
-                </Link>
-                <Link
-                    className={classes.pages}
-                    onClick={sendEmail}
-                    color="white"
-                    underline="hover"
-                >
-                    CONTACT
-                </Link>
             </div>
         </div>
     );
