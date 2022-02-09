@@ -6,6 +6,7 @@ import BG from '../../components/Images/bImage.jpeg';
 import { makeStyles } from '@mui/styles';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import { Button } from '@mui/material';
 
 const styles = makeStyles({
     home: {
@@ -33,7 +34,7 @@ const styles = makeStyles({
         cursor: 'pointer',
     },
     homeDescription: {
-        padding: '200px 0',
+        padding: '180px 0',
     },
     h3: {
         maxWidth: 500,
@@ -51,7 +52,7 @@ const styles = makeStyles({
     social: {
         display: 'flex',
         justifyContent: 'center',
-        paddingBottom: '15px',
+        // paddingBottom: '15px',
     },
 });
 
@@ -103,6 +104,27 @@ function Home() {
                     tech stack - node.js, react.js and have been actively
                     shipping multiple projects in Node/React/MongoDB stack.
                 </Typography>
+                <Link
+                    style={{ textDecoration: 'none', padding: '200px, 0' }}
+                    href="resume.pdf"
+                    download="Uttam resume.pdf"
+                >
+                    <Button
+                        style={{
+                            maxWidth: 500,
+                            marginLeft: '150px',
+                            display: 'flex',
+                            justifyContent: 'flex-start',
+                            borderRadius: '2rem 2rem',
+                            border: '1px solid lightgray',
+                            backgroundColor: 'lightgray',
+                            color: 'black',
+                        }}
+                        variant="contained"
+                    >
+                        Get Resume
+                    </Button>
+                </Link>
             </div>
 
             <div className={classes.connect}>
@@ -117,7 +139,7 @@ function Home() {
                     >
                         <img
                             style={{
-                                paddingTop:'1px',
+                                paddingTop: '1px',
                                 width: '17px',
                                 height: '17px',
                                 borderRadius: '2px',
