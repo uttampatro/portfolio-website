@@ -105,16 +105,16 @@ function Home() {
                     shipping multiple projects in Node/React/MongoDB stack.
                 </Typography>
                 <Link
-                    style={{ textDecoration: 'none', padding: '200px, 0' }}
+                    style={{ textDecoration: 'none' }}
                     href="resume.pdf"
                     download="Uttam resume.pdf"
                 >
                     <Button
                         style={{
                             maxWidth: 500,
-                            marginLeft: '150px',
+                            margin: '0 150px',
                             display: 'flex',
-                            justifyContent: 'flex-start',
+                            justifyContent: 'space-around',
                             borderRadius: '2rem 2rem',
                             border: '1px solid lightgray',
                             backgroundColor: 'lightgray',
