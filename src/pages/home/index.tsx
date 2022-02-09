@@ -114,7 +114,7 @@ function Home() {
                             maxWidth: 500,
                             margin: '0 150px',
                             display: 'flex',
-                            justifyContent: 'space-around',
+                            justifyContent: 'center',
                             borderRadius: '2rem 2rem',
                             border: '1px solid lightgray',
                             backgroundColor: 'lightgray',
