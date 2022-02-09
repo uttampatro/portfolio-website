@@ -52,7 +52,6 @@ const styles = makeStyles({
     social: {
         display: 'flex',
         justifyContent: 'center',
-        // paddingBottom: '15px',
     },
 });
 
@@ -113,7 +112,8 @@ function Home() {
                         style={{
                             maxWidth: 500,
                             margin: '0 150px',
-                            display: 'flex',
+                            display: 'block',
+                            position: 'relative',
                             justifyContent: 'center',
                             borderRadius: '2rem 2rem',
                             border: '1px solid lightgray',
