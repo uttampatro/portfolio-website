@@ -74,7 +74,7 @@ function Projects() {
 
     const sendEmail = (e: any) => {
         e.preventDefault();
-        window.location.href = `mailto:uttampatro890@gmail.com`;
+        window.location.href = `mailto:uttampatro890@gmail.com?subject=I came from your site`;
     };
 
     return (
