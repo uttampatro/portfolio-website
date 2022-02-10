@@ -111,7 +111,7 @@ function Home() {
                     <Button
                         style={{
                             maxWidth: 500,
-                            margin: '0 150px',
+                            margin: '0 160px',
                             display: 'block',
                             position: 'relative',
                             justifyContent: 'center',
