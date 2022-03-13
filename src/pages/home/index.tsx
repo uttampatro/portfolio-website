@@ -149,7 +149,7 @@ function Home() {
                     </Link>
                 </div>
                 <div className="socialLogo">
-                    <Link href="https://twitter.com/uttampatro" target="_blank">
+                    <Link href="https://twitter.com/uttxmpatro" target="_blank">
                         <img
                             style={{
                                 width: '21px',
