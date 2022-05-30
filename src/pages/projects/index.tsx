@@ -280,7 +280,7 @@ function Projects() {
                             className={classes.linkPrimary}
                             underline="none"
                             color="black"
-                            href="https://confident-yonath-533d7a.netlify.app/"
+                            href="https://movie-uploader.netlify.app"
                             target="_blank"
                         >
                             Live Project
