@@ -161,6 +161,44 @@ function Projects() {
                 </div>
                 <div className={classes.bodyContainer}>
                     <Typography style={{ color: 'black' }} variant="h3">
+                        Student Management System
+                    </Typography>
+                    <Typography variant="caption">Mar, 2022</Typography>
+                    <Typography>
+                        This project is based on managing students data.
+                    </Typography>
+                    <div className={classes.link}>
+                        <Link
+                            className={classes.linkPrimary}
+                            underline="none"
+                            color="black"
+                            href="https://student-management-systems.netlify.app/"
+                            target="_blank"
+                        >
+                            Live Project
+                        </Link>
+                        <Link
+                            className={classes.linkSecondary}
+                            underline="none"
+                            color="black"
+                            href="https://github.com/uttampatro/studentManagementSystem"
+                            target="_blank"
+                        >
+                            See Client Code
+                        </Link>
+                        <Link
+                            className={classes.linkSecondary}
+                            underline="none"
+                            color="black"
+                            href="https://github.com/uttampatro/studentManagementSystem-servicee"
+                            target="_blank"
+                        >
+                            See Service Code
+                        </Link>
+                    </div>
+                </div>
+                <div className={classes.bodyContainer}>
+                    <Typography style={{ color: 'black' }} variant="h3">
                         Quiz about Sports
                     </Typography>
                     <Typography variant="caption">Dec, 2021</Typography>
