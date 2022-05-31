@@ -123,8 +123,9 @@ function Projects() {
                     </Typography>
                     <Typography variant="caption">Present</Typography>
                     <Typography>
-                        This is a clone of udemy website. For live use this
-                        credential{' '}
+                        Built a course management application where courses can
+                        be created by authenticated users. For using the app use
+                        credentials{' '}
                         <strong>
                             email: uttam@gmail.com, password: 12345678
                         </strong>
@@ -199,19 +200,19 @@ function Projects() {
                 </div>
                 <div className={classes.bodyContainer}>
                     <Typography style={{ color: 'black' }} variant="h3">
-                        Quiz about Sports
+                        Movie Uploader
                     </Typography>
                     <Typography variant="caption">Dec, 2021</Typography>
                     <Typography>
-                        This is a CLI Based quiz app build with{' '}
-                        <strong>NodeJS</strong> on the topic of Sports
+                        Built a video/image upload application MERN stack with
+                        typescript.
                     </Typography>
                     <div className={classes.link}>
                         <Link
                             className={classes.linkPrimary}
                             underline="none"
                             color="black"
-                            href="https://replit.com/@UttamPatro/end-game?embed=true#index.js"
+                            href="https://movie-uploader.netlify.app"
                             target="_blank"
                         >
                             Live Project
@@ -220,10 +221,19 @@ function Projects() {
                             className={classes.linkSecondary}
                             underline="none"
                             color="black"
-                            href="https://github.com/uttampatro/quiz-game"
+                            href="https://github.com/uttampatro/assignment-01"
                             target="_blank"
                         >
-                            See Code
+                            See Client Code
+                        </Link>
+                        <Link
+                            className={classes.linkSecondary}
+                            underline="none"
+                            color="black"
+                            href="https://github.com/uttampatro/assignment-01-service"
+                            target="_blank"
+                        >
+                            See Service Code
                         </Link>
                     </div>
                 </div>
@@ -260,45 +270,6 @@ function Projects() {
                             underline="none"
                             color="black"
                             href="https://github.com/uttampatro/assignment-02-service"
-                            target="_blank"
-                        >
-                            See Service Code
-                        </Link>
-                    </div>
-                </div>
-                <div className={classes.bodyContainer}>
-                    <Typography style={{ color: 'black' }} variant="h3">
-                        Movie Uploader
-                    </Typography>
-                    <Typography variant="caption">Sep, 2021</Typography>
-                    <Typography>
-                        In this project we can add movie and we can also watch
-                        movie in this website.
-                    </Typography>
-                    <div className={classes.link}>
-                        <Link
-                            className={classes.linkPrimary}
-                            underline="none"
-                            color="black"
-                            href="https://movie-uploader.netlify.app"
-                            target="_blank"
-                        >
-                            Live Project
-                        </Link>
-                        <Link
-                            className={classes.linkSecondary}
-                            underline="none"
-                            color="black"
-                            href="https://github.com/uttampatro/assignment-01"
-                            target="_blank"
-                        >
-                            See Client Code
-                        </Link>
-                        <Link
-                            className={classes.linkSecondary}
-                            underline="none"
-                            color="black"
-                            href="https://github.com/uttampatro/assignment-01-service"
                             target="_blank"
                         >
                             See Service Code
