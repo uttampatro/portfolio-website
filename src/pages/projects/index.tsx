@@ -119,23 +119,20 @@ function Projects() {
             <div className={classes.body}>
                 <div className={classes.bodyContainer}>
                     <Typography style={{ color: 'black' }} variant="h3">
-                        Udemy Clone
+                        Article Management System
                     </Typography>
-                    <Typography variant="caption">Present</Typography>
+                    <Typography variant="caption">Jun, 2022</Typography>
                     <Typography>
-                        Built a course management application where courses can
-                        be created by authenticated users. For using the app use
-                        credentials{' '}
-                        <strong>
-                            email: uttam@gmail.com, password: 12345678
-                        </strong>
+                        Built a article management application where article can
+                        be created by authenticated users, used MERN stack, used
+                        AWS S3 to store media, and deployed using heroku/netlify
                     </Typography>
                     <div className={classes.link}>
                         <Link
                             className={classes.linkPrimary}
                             underline="none"
                             color="black"
-                            href="https://serene-engelbart-6b90e8.netlify.app/"
+                            href="https://article-content.netlify.app/"
                             target="_blank"
                         >
                             Live Project
@@ -144,7 +141,7 @@ function Projects() {
                             className={classes.linkSecondary}
                             underline="none"
                             color="black"
-                            href="https://github.com/uttampatro/udemy-client"
+                            href="https://github.com/uttampatro/user-generated-content"
                             target="_blank"
                         >
                             See Client Code
@@ -153,7 +150,7 @@ function Projects() {
                             className={classes.linkSecondary}
                             underline="none"
                             color="black"
-                            href="https://github.com/uttampatro/udemy-server"
+                            href="https://github.com/uttampatro/user-generated-content-service"
                             target="_blank"
                         >
                             See Service Code
@@ -166,7 +163,10 @@ function Projects() {
                     </Typography>
                     <Typography variant="caption">Mar, 2022</Typography>
                     <Typography>
-                        This project is based on managing students data.
+                        Built a student management system where students can be
+                        registered and other details can be entered, Used React
+                        and Node/Express, used MongoDB for db, deployed on
+                        heroku/netlify
                     </Typography>
                     <div className={classes.link}>
                         <Link
@@ -205,7 +205,8 @@ function Projects() {
                     <Typography variant="caption">Dec, 2021</Typography>
                     <Typography>
                         Built a video/image upload application MERN stack with
-                        typescript.
+                        typescript, used AWS S3 to store media, and deployed
+                        using heroku/netlify
                     </Typography>
                     <div className={classes.link}>
                         <Link
@@ -239,19 +240,23 @@ function Projects() {
                 </div>
                 <div className={classes.bodyContainer}>
                     <Typography style={{ color: 'black' }} variant="h3">
-                        CRUD Operation
+                        Udemy Clone
                     </Typography>
-                    <Typography variant="caption">Oct, 2021</Typography>
+                    <Typography variant="caption">Present</Typography>
                     <Typography>
-                        This project is based on <strong>CRUD</strong> operation
-                        and also we share User Data to anyone through mail.
+                        Built a course management application where courses can
+                        be created by authenticated users. For using the app use
+                        credentials{' '}
+                        <strong>
+                            email: uttam@gmail.com, password: 12345678
+                        </strong>
                     </Typography>
                     <div className={classes.link}>
                         <Link
                             className={classes.linkPrimary}
                             underline="none"
                             color="black"
-                            href="https://vigorous-spence-26d3cf.netlify.app/"
+                            href="https://serene-engelbart-6b90e8.netlify.app/"
                             target="_blank"
                         >
                             Live Project
@@ -260,7 +265,7 @@ function Projects() {
                             className={classes.linkSecondary}
                             underline="none"
                             color="black"
-                            href="https://github.com/uttampatro/assignment-02"
+                            href="https://github.com/uttampatro/udemy-client"
                             target="_blank"
                         >
                             See Client Code
@@ -269,7 +274,7 @@ function Projects() {
                             className={classes.linkSecondary}
                             underline="none"
                             color="black"
-                            href="https://github.com/uttampatro/assignment-02-service"
+                            href="https://github.com/uttampatro/udemy-server"
                             target="_blank"
                         >
                             See Service Code
